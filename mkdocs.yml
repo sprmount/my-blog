@@ -1,0 +1,40 @@
+site_name: 我的个人小站  # 改成你自己的网站名
+
+theme:
+  name: material
+  language: zh # 设置界面语言为中文
+  icon:
+    logo: material/home # 网站图标，可以去 Material 图标库搜喜欢的
+  palette:
+    # 明亮模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    # 暗黑模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: grey
+      toggle:
+        icon: material/brightness-4
+        name: 切换到明亮模式
+  features:
+    - navigation.tabs      # 顶部导航标签
+    - navigation.top       # 返回顶部按钮
+    - search.highlight     # 搜索关键词高亮
+
+# 网站底部版权信息
+copyright: Copyright &copy; 2026 你的名字
+
+# 这一部分是扩展功能，能让你的 Markdown 支持更多格式
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - attr_list
+  - footnotes
